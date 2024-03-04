@@ -34,5 +34,17 @@ This Basic project to learn kafka
 3. Start Zookeeper. - C:\kafka_2.12-3.0.0\bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 4. Start Kafka Server. - C:\kafka_2.12-3.0.0\bin\windows\kafka-server-start.bat config\server.properties
 
+## Basic Command
+https://kafka.apache.org/quickstart
+
+    create new topic in windows
+    bin\windows\kafka-topics.bat --create --topic user-events --bootstrap-server localhost:9092
+
+    produce massage from topic
+    bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+
+    consume massage from topic
+    bin\windows\kafka-console-consumer.bat --topic user-events --from-beginning --bootstrap-server localhost:9092
+
 
 
