@@ -27,4 +27,12 @@ This Basic project to learn kafka
 
 6. Partitions - every topic have multiple partitions. 
 
+## Installation
+
+1. Download kafka zip file form office website. - https://kafka.apache.org/downloads
+2. Extract file
+3. Start Zookeeper. - C:\kafka_2.12-3.0.0\bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+4. Start Kafka Server. - C:\kafka_2.12-3.0.0\bin\windows\kafka-server-start.bat config\server.properties
+
+
 
