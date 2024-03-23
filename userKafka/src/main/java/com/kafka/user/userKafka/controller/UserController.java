@@ -18,7 +18,9 @@ public class UserController {
 
     @PostMapping("/update")
     public ResponseEntity<?> updateUserData() {
-        this.kafkaService.updateUserDetails("test for producer");
+        for(int i=1;i<=100000;i++) {
+            this.kafkaService.updateUserDetails("test for producer");
+        }
         return new ResponseEntity<>(Map.of("Massage","updated"),HttpStatus.OK);
     }
 }

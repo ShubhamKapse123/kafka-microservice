@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaService {
     @Autowired
-    private KafkaTemplate<String,String> kafkaTemplate;
+    private KafkaTemplate<String, String> kafkaTemplate;
     private Logger log = LoggerFactory.getLogger(KafkaService.class);
 
-    public boolean updateUserDetails(String data){
-        kafkaTemplate.send(AppConstant.USER_EVENT,data);
-        log.info("data produce in topic .... ");
+    public boolean updateUserDetails(String data) {
+        kafkaTemplate.send(AppConstant.USER_EVENT, data);
+        log.info("Data Produce in topic");
         return true;
     }
 }
